@@ -51,7 +51,7 @@
 </div>
 
 <div class="button">
-<a href="http://bi.oo/laporan">
+<a href="{{Request::getHost()}}/laporan">
   <button type="button" class="btn btn-success btn-block btn-lg">Lihat Data Transaksi</button>
 </a>
 </div>
