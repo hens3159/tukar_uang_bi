@@ -50,7 +50,7 @@ body{
 
     <div class="menu">
     <ul class="coco">
-    <a href="http://bi.oo//transaksi-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Input Data Transaksi</a>
+    <a href="{{Request::getHost()}}/transaksi-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Input Data Transaksi</a>
   </ul>
     </div>
 
