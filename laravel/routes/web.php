@@ -18,12 +18,11 @@ Route::get('/', function () {
 
 //Route::resource('laporan', 'TukarUangController');
 
-Route::get('/laporan','TukarUangController@index')->name('admin');
+Auth::routes();
+Route::get('/laporan','AdminController@index')->name('admin');
 Route::get('/transaksi-link','TukarUangController@TransaksiLink')->name('home');
-Route::get('/laporan-link','TukarUangController@LaporanLink')->name('admin');
+Route::get('/laporan-link','AdminController@LaporanLink')->name('admin');
 Route::get('/form','TukarUangController@FormTransaksi')->name('home');
 Route::get('/ajax-form','TukarUangController@FormTransaksiAjax');
-Route::get('/ajax','TukarUangController@AjaxSearch');
-Route::get('/profil', 'TukarUangController@show');
-
-Auth::routes();
+Route::get('/ajax','AdminController@AjaxSearch');
+Route::get('/profil', 'AdminController@show');
