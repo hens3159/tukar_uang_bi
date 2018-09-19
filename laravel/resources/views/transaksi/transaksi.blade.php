@@ -47,7 +47,7 @@
 </div>
 
 <div class="button">
-<a href="{{Request::getHost()}}/form">  <button type="button" class="btn btn-success btn-block btn-lg">Input Data Transaksi</button>
+<a href="http://{{Request::getHost()}}/form">  <button type="button" class="btn btn-success btn-block btn-lg">Input Data Transaksi</button>
 </a>
 </div>
 </div>

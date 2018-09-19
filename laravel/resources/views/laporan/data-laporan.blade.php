@@ -43,7 +43,7 @@ body{
 
     <div class="menu">
     <ul class="coco">
-    <a href="{{Request::getHost()}}/laporan-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Laporan Transaksi</a>
+    <a href="http://{{Request::getHost()}}/laporan-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Laporan Transaksi</a>
   </ul>
     </div>
 
