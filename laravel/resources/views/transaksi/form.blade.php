@@ -49,7 +49,7 @@
 
   <div class="menu">
   <ul class="coco">
-  <a href="http://bi.oo//transaksi-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Input Data Transaksi</a>
+  <a href="http://{{Request::getHost()}}/transaksi-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Input Data Transaksi</a>
 </ul>
   </div>
 
@@ -166,7 +166,7 @@ $('#submit_komen').click(function(e){
       $('#usia').val("");
       $('#alamat').val("");
       $('#nominal').val("");
-      //alert(data);
+      alert(data);
 
       $("#formInput").find('.form-group').removeClass('has-success');
       $("#formInput").find('.form-control-feedback').removeClass('glyphicon glyphicon-ok');
