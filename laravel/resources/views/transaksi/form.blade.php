@@ -166,7 +166,6 @@ $('#submit_komen').click(function(e){
       $('#usia').val("");
       $('#alamat').val("");
       $('#nominal').val("");
-      alert(data);
 
       $("#formInput").find('.form-group').removeClass('has-success');
       $("#formInput").find('.form-control-feedback').removeClass('glyphicon glyphicon-ok');
