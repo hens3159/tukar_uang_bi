@@ -1,3 +1,8 @@
+<div class="total-uang">
+<h6>Total Nominal Penukaran</h6>
+<h6>Rp. {{$jumlah}} -</h6>
+</div>
+
 <table class="table">
   <thead>
     <tr class="head">

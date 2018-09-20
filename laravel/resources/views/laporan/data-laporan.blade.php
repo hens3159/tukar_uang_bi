@@ -43,7 +43,7 @@ body{
 
     <div class="menu">
     <ul class="coco">
-    <a href="http://{{Request::getHost()}}/laporan-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Laporan Transaksi</a>
+    <a href="http://bi.oo/laporan-link" style="font-size:20px;"><i class="fa fa-arrow-left" style="font-size:20px; background:none; margin-right:16px;"></i>Laporan Transaksi</a>
   </ul>
     </div>
 
@@ -70,14 +70,14 @@ body{
 
 </form>
 
-
+<div id="koko">
 <div class="total-uang">
 <h6>Total Nominal Penukaran</h6>
 <h6>Rp. {{$jumlah}} -</h6>
 </div>
 
 
-  <table class="table" id="koko">
+  <table class="table">
     <thead>
       <tr class="head">
         <th style="text-align:center;">No</th>
@@ -101,6 +101,7 @@ body{
     </tbody>
 
   </table>
+</div>
 </div>
 
 

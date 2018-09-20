@@ -42,10 +42,10 @@ class AdminController extends Controller
       return view('laporan.laporan');
     }
 
-  public function AjaxSearch(Request  $request)
+    public function AjaxSearch(Request  $request)
   {
-    $tanggal1 = $request->date1;
-    $tanggal2 = $request->date2;
+    $tanggal1 =$request->date1;
+    $tanggal2 =$request->date2 ;
 
     $users = DB::table('customer_money')
                   ->join('customers', 'customers.id', '=', 'customer_money.customer_id')
@@ -54,10 +54,15 @@ class AdminController extends Controller
                   ->whereBetween('customer_money.created_at',[$tanggal1,$tanggal2])
                   ->get();
 
+   $jumlah = DB::table('customer_money')
+                 ->join('customers', 'customers.id', '=', 'customer_money.customer_id')
+                 ->join('moneys', 'moneys.id', '=', 'customer_money.money_id')
+                 ->select('moneys.nominal_penukaran')
+                 ->whereBetween('customer_money.created_at',[$tanggal1,$tanggal2])
+                 ->sum('nominal_penukaran');
+  return view ('laporan.laporan-ajax',['customer'=>$users, 'jumlah'=>$jumlah]);
 
-  return view ('laporan.laporan-ajax',['customer'=>$users]);
-
- }
+  }
 
 
 public function show(Request $request)
